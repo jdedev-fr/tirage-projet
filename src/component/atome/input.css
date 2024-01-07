@@ -1,0 +1,12 @@
+.jdeInput {
+    padding: 10px 20px;
+    background-color: lightsteelblue;
+    color: black;
+    font-weight: bold;
+}
+
+.jdeInput::placeholder {
+    color: black;
+    font-style: italic;
+    font-weight: normal;
+}

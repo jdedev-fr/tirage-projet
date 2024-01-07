@@ -1,0 +1,11 @@
+.jdeButton {
+    padding: 10px 50px;
+    font-weight: bold;
+    color: black;
+    opacity: 0.9;
+    transition: opacity 0.5s ease;
+}
+
+.jdeButton:hover {
+    opacity: 1;
+}
