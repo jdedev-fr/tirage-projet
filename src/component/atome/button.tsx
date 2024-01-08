@@ -7,6 +7,6 @@ interface ButtonProps {
     color?: string
 }
 
-export function Button({ content, change, color = "royalblue" }: ButtonProps) {
-    return <button className="jdeButton" style={{ backgroundColor: color }} onClick={change}>{content}</button>
+export function Button({ content, change, color = "primary" }: ButtonProps) {
+    return <button className={"jdeButton " + color} onClick={change}>{content}</button>
 }

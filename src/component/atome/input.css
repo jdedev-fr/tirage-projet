@@ -1,6 +1,7 @@
 .jdeInput {
     padding: 10px 20px;
-    background-color: lightsteelblue;
+    background-color: white;
+    border-radius: 7px;
     color: black;
     font-weight: bold;
 }

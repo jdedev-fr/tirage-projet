@@ -1,11 +1,49 @@
 .jdeButton {
     padding: 10px 50px;
     font-weight: bold;
-    color: black;
+    color: #F4B740;
+    background-color: #1366B3;
+    border: solid 1px #F4B740;
+    border-radius: 7px;
     opacity: 0.9;
-    transition: opacity 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.jdeButton.primary {
+    background-color: #1366B3;
+}
+
+.jdeButton.succes {
+    background-color: #098b1b;
+    color: black;
+}
+
+.jdeButton.alert {
+    background-color: #75910d;
+    color: black;
+}
+
+.jdeButton.danger {
+    background-color: #af1111;
+    color: white;
 }
 
 .jdeButton:hover {
-    opacity: 1;
+    background-color: #F4B740;
+    color: #1366B3;
+}
+
+.jdeButton.succes:hover {
+    background-color: black;
+    color: #098b1b;
+}
+
+.jdeButton.alert:hover {
+    background-color: black;
+    color: #75910d;
+}
+
+.jdeButton.danger {
+    background-color: white;
+    color: #af1111;
 }
