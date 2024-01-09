@@ -1,37 +1,30 @@
-.threeCol {
+.threeCol,
+.twoCol,
+.oneCol,
+.fourCol {
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(100px, 1fr);
-    gap: 10px;
+    justify-content: space-between;
 }
 
 .twoCol {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(100px, 1fr);
-    gap: 10px;
 }
 
 .threeCol {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(100px, 1fr);
-    gap: 10px;
 }
 
 .fourCol {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: minmax(100px, 1fr);
-    gap: 10px;
 }
 
 .oneCol>*,
 .twoCol>*,
 .threeCol>*,
 .fourCol>* {
-    justify-self: center;
-    align-self: center;
+    align-self: stretch;
+    margin: 10px;
 }
 
 @media screen and (max-width:1024px) {

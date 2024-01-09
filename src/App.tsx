@@ -5,6 +5,7 @@ import { DistribUserForm } from './component/form/distribUserForm'
 import { ListeEquipes } from './component/equipes/listeEquipes'
 import { Br } from './component/atome/br'
 import { useApp } from './hooks/useApp'
+import { Title } from './component/atome/title'
 
 function App() {
   const { nom, prenom, etudiants, nbParEquipe, equipes, setNom, setPrenom, addEtudiant, removeEtudiant, setNbParEquipe, distribUser } = useApp()
@@ -19,6 +20,8 @@ function App() {
           <DistribUserForm nb={nbParEquipe} change={(e) => setNbParEquipe(+e.target.value)} distribuer={() => distribUser(nbParEquipe)} />
           {equipes.length > 0 && <><Br /><ListeEquipes equipes={equipes} /></>}
         </>}
+      <Br />
+      <footer><Title>Application tirage équipe by JdeDev</Title></footer>
     </>
   )
 }
